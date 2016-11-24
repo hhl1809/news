@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Trang chủ-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="News" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="MAZ-fJ-5yt">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MAZ-fJ-5yt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Vy2-Qs-u6l"/>
+                            <constraint firstAttribute="trailing" secondItem="MAZ-fJ-5yt" secondAttribute="trailing" id="WaE-fO-9Jn"/>
+                            <constraint firstAttribute="bottom" secondItem="MAZ-fJ-5yt" secondAttribute="bottom" id="XWT-q1-Rne"/>
+                            <constraint firstItem="MAZ-fJ-5yt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="o2a-s9-CFb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Trang chủ" id="iKU-cT-NhG">
+                        <barButtonItem key="leftBarButtonItem" image="Menu" id="VtM-7S-Svg">
+                            <color key="tintColor" red="0.054901960784313725" green="0.18431372549019609" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="homeTableView" destination="MAZ-fJ-5yt" id="K9E-Gp-02v"/>
+                        <outlet property="menuButton" destination="VtM-7S-Svg" id="T95-7r-Ico"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="840.79999999999995" y="123.68815592203899"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MWC-gF-idX">
+            <objects>
+                <navigationController storyboardIdentifier="idHomeNavigation" automaticallyAdjustsScrollViewInsets="NO" id="lkq-AN-6Ua" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="gyw-bH-oY6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.054901960780000002" green="0.1843137255" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="iTV-y0-han"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gId-Tj-JFD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98.400000000000006" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Menu" width="22" height="22"/>
+    </resources>
+</document>

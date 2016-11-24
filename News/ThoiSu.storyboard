@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Thời Sự-->
+        <scene sceneID="N7U-iE-B8j">
+            <objects>
+                <viewController id="edj-QE-Yj9" customClass="ThoiSuViewController" customModule="News" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mxe-7l-7Tb"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uhs-bT-g99"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nyA-rV-sOb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Icc-ty-gNF">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Icc-ty-gNF" firstAttribute="top" secondItem="Mxe-7l-7Tb" secondAttribute="bottom" id="Jms-hn-Laf"/>
+                            <constraint firstItem="Uhs-bT-g99" firstAttribute="top" secondItem="Icc-ty-gNF" secondAttribute="bottom" id="KWp-RQ-m31"/>
+                            <constraint firstItem="Icc-ty-gNF" firstAttribute="leading" secondItem="nyA-rV-sOb" secondAttribute="leading" id="bhN-bS-CEe"/>
+                            <constraint firstAttribute="trailing" secondItem="Icc-ty-gNF" secondAttribute="trailing" id="tyT-qf-IJt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Thời Sự" id="VZR-VF-JME">
+                        <barButtonItem key="leftBarButtonItem" image="Menu" id="hvd-4m-Vsp">
+                            <color key="tintColor" red="0.054901960780000002" green="0.1843137255" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="hvd-4m-Vsp" id="N7v-2M-WMS"/>
+                        <outlet property="thoisuTableView" destination="Icc-ty-gNF" id="B6q-PJ-9mJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a7K-by-7g6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1432.8" y="-127.28635682158921"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3Ig-g8-n3r">
+            <objects>
+                <navigationController storyboardIdentifier="idThoiSuNavigation" automaticallyAdjustsScrollViewInsets="NO" id="LRh-oK-jXr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gHe-ky-myn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="edj-QE-Yj9" kind="relationship" relationship="rootViewController" id="buN-Oi-nIo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ig3-e9-S9F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="493.60000000000002" y="-127.28635682158921"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Menu" width="22" height="22"/>
+    </resources>
+</document>
