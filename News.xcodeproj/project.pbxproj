@@ -31,9 +31,11 @@
 		49AA60B51DCAD5E000673F1C /* DefaultNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AA60B31DCAD5E000673F1C /* DefaultNewsTableViewCell.swift */; };
 		49AA60B61DCAD5E000673F1C /* DefaultNewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49AA60B41DCAD5E000673F1C /* DefaultNewsTableViewCell.xib */; };
 		49AA60B81DCADE0B00673F1C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AA60B71DCADE0B00673F1C /* HomeViewController.swift */; };
+		8F36B52F0FAE082CC8A3F223 /* Pods_News.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5FD4B2FD63E98ED4B3D2C3A /* Pods_News.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D785E0E6BCE28279D56202C /* Pods-News.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-News.debug.xcconfig"; path = "Pods/Target Support Files/Pods-News/Pods-News.debug.xcconfig"; sourceTree = "<group>"; };
 		491602671DD454DD00A2A104 /* ThoiSuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThoiSuViewController.swift; sourceTree = "<group>"; };
 		491ADA891DD0759100184270 /* ArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 		491B877F1DD1AC5000E738B5 /* Menu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
@@ -62,6 +64,8 @@
 		49AA60B31DCAD5E000673F1C /* DefaultNewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultNewsTableViewCell.swift; sourceTree = "<group>"; };
 		49AA60B41DCAD5E000673F1C /* DefaultNewsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DefaultNewsTableViewCell.xib; sourceTree = "<group>"; };
 		49AA60B71DCADE0B00673F1C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		50A2369A23EA9502DC437748 /* Pods-News.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-News.release.xcconfig"; path = "Pods/Target Support Files/Pods-News/Pods-News.release.xcconfig"; sourceTree = "<group>"; };
+		A5FD4B2FD63E98ED4B3D2C3A /* Pods_News.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_News.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,12 +73,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F36B52F0FAE082CC8A3F223 /* Pods_News.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		098F20985CB1D9B56BD80B59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5FD4B2FD63E98ED4B3D2C3A /* Pods_News.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		491B877C1DD1AB9800E738B5 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +140,8 @@
 			children = (
 				49AA60981DCACD9D00673F1C /* News */,
 				49AA60971DCACD9D00673F1C /* Products */,
+				73CAF4719505D1F436655A81 /* Pods */,
+				098F20985CB1D9B56BD80B59 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,6 +212,15 @@
 			name = "Custom Cells";
 			sourceTree = "<group>";
 		};
+		73CAF4719505D1F436655A81 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D785E0E6BCE28279D56202C /* Pods-News.debug.xcconfig */,
+				50A2369A23EA9502DC437748 /* Pods-News.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -204,9 +228,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49AA60A81DCACD9D00673F1C /* Build configuration list for PBXNativeTarget "News" */;
 			buildPhases = (
+				2C5CDD07B91F5E2C0B88807B /* [CP] Check Pods Manifest.lock */,
 				49AA60921DCACD9D00673F1C /* Sources */,
 				49AA60931DCACD9D00673F1C /* Frameworks */,
 				49AA60941DCACD9D00673F1C /* Resources */,
+				EEAEF77C365903DA5A70792C /* [CP] Embed Pods Frameworks */,
+				830E8AB923AC1E1FA26A463A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -274,6 +301,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2C5CDD07B91F5E2C0B88807B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		830E8AB923AC1E1FA26A463A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-News/Pods-News-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEAEF77C365903DA5A70792C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-News/Pods-News-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		49AA60921DCACD9D00673F1C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -335,6 +410,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -363,6 +439,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -384,6 +461,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -404,13 +482,16 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		49AA60A91DCACD9D00673F1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D785E0E6BCE28279D56202C /* Pods-News.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = F4QQY52YJ8;
@@ -426,7 +507,9 @@
 		};
 		49AA60AA1DCACD9D00673F1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50A2369A23EA9502DC437748 /* Pods-News.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = F4QQY52YJ8;
